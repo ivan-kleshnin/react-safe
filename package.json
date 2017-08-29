@@ -1,0 +1,21 @@
+{
+  "name": "react-safe",
+  "version": "1.0.0",
+  "description": "Safe JSX: syntactic sugar over dangerouslySetInnerHTML",
+  "main": "index.js",
+  "author": "Ivan Kleshnin <ivan@paqmind.com> (paqmind.com)",
+  "homepage": "https://github.com/ivan-kleshnin/react-safe",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivan-kleshnin/react-safe"
+  },
+  "keywords": [
+    "react",
+    "safe",
+    "html"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "html-tags": "^2.0.0"
+  }
+}

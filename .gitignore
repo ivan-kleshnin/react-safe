@@ -1,0 +1,10 @@
+# Editor
+.idea
+
+# Dependencies
+node_modules
+
+# Misc
+npm-debug.log
+.DS_Store
+ignore/
