@@ -1,3 +1,4 @@
+let React = require("react")
 let htmlTags = require("html-tags")
 
 let omit = (keys, obj) => {

@@ -6,7 +6,12 @@
   "dependencies": {
     "html-tags": "^2.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "react": "*"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
   },
