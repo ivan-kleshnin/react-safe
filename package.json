@@ -1,6 +1,6 @@
 {
   "name": "react-safe",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Safe JSX: syntactic sugar over dangerouslySetInnerHTML",
   "main": "index.js",
   "dependencies": {
