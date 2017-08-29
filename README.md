@@ -1,7 +1,18 @@
 # React Safe
 
-This package provides a syntactic sugar over `dangerousSetInnerHTML` technique. The latter is used
-much more often than its intentionally ugly name and syntax imply. At least in my experience.
+This package provides a syntactic sugar over the raw `dangerousSetInnerHTML`.
+
+### Motivation
+
+In real projects, at least in my experience, the usage of `dangerousSetInnerHTML` is extensive.
+It has two problems:
+
+1. It's too long and ugly for its frequency. Also JSX does not look like HTML anymore as tag contents
+are passed via attributes. Which kinda defeats the usage point of JSX.
+
+2. The term "dangerous" is misleading. It represents something a programmer is considering safe(!)
+instead. So it kinda spams the vision with irrelevant signals of false *danger* decreasing the
+capability to notice real threats.
 
 ### Examples
 
