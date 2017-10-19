@@ -13,8 +13,6 @@ let omit = (keys, obj) => {
 
 let Safe = htmlTags.reduce((tags, tag) => {
   tags[tag] = (props) => {
-    let children = props.children
-    delete props.children
     return React.createElement(tag, Object.assign(
       omit(["children"], props),
       {dangerouslySetInnerHTML: {__html: props.children}}
