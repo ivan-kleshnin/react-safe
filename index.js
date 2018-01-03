@@ -37,8 +37,6 @@ var omit = function omit(keys, obj) {
 
 var Safe = htmlTags.reduce(function (tags, tag) {
   tags[tag] = function (props) {
-    var children = props.children;
-    delete props.children;
     return React.createElement(tag, Object.assign(omit(["children"], props), { dangerouslySetInnerHTML: { __html: props.children } }));
   };
   return tags;
