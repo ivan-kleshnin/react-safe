@@ -1,5 +1,5 @@
-let React = require("react")
-let htmlTags = require("html-tags")
+import React from "react"
+import htmlTags from "html-tags"
 
 let omit = (keys, obj) => {
   let obj2 = {}
@@ -12,13 +12,16 @@ let omit = (keys, obj) => {
 }
 
 let Safe = htmlTags.reduce((tags, tag) => {
-  tags[tag] = (props) => {
-    return React.createElement(tag, Object.assign(
-      omit(["children"], props),
-      {dangerouslySetInnerHTML: {__html: props.children}}
-    ))
+  tags[tag] = class Tag extends React.Component {
+    render() {
+      let {props} = this
+      return React.createElement(tag, Object.assign(
+        omit(["children"], props),
+        {dangerouslySetInnerHTML: {__html: props.children}}
+      ))
+    }
   }
   return tags
 }, {})
 
-module.exports = Safe
+export default Safe
