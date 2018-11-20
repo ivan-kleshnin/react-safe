@@ -2,18 +2,22 @@
   "name": "react-safe",
   "version": "1.2.0",
   "description": "Safe JSX: syntactic sugar over dangerouslySetInnerHTML",
-  "main": "src/index.js",
+  "main": "index.js",
   "dependencies": {
     "html-tags": "^2.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
     "react": "*"
   },
   "peerDependencies": {
     "react": "*"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "build": "babel src -d ./",
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -29,8 +33,5 @@
   "bugs": {
     "url": "https://github.com/ivan-kleshnin/react-safe/issues"
   },
-  "homepage": "https://github.com/ivan-kleshnin/react-safe",
-  "babel": {
-    "presets": "es2015"
-  }
+  "homepage": "https://github.com/ivan-kleshnin/react-safe"
 }
