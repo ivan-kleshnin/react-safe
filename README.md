@@ -14,11 +14,6 @@ are passed via attributes. Which kinda defeats the usage point of JSX.
 instead. So it kinda spams the vision with irrelevant signals of *false danger* decreasing the
 capability to notice real threats.
 
-### A warning
-
-The programmer must understand that using this package does not relieve him of the need to check 
-the data transmitted as children for the presence of a code that can be used to conduct an XSS attack.
-
 ## Examples
 
 #### React (vanilla)
@@ -34,6 +29,11 @@ the data transmitted as children for the presence of a code that can be used to 
 <Safe.h1>{page.title}</Safe.h1>
 <Safe.div>{renderMD(page.body)}</Safe.div>
 ```
+
+## A warning
+
+The programmer must understand that using this package does not relieve him of the need to check 
+the data transmitted as children for the presence of a code that can be used to conduct an XSS attack.
 
 ## License
 
