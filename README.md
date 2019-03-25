@@ -30,10 +30,11 @@ capability to notice real threats.
 <Safe.div>{renderMD(page.body)}</Safe.div>
 ```
 
-## A warning
+## Warning
 
-The programmer must understand that using this package does not relieve him of the need to check 
-the data transmitted as children for the presence of a code that can be used to conduct an XSS attack.
+React-Safe is a thin wrapper over [dangerouslySetInnerHTML](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml)
+so all the usual concerns about XSS attacks and security in general apply. Check the above link for
+more information.
 
 ## License
 
